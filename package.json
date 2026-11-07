@@ -1,11 +1,12 @@
 {
   "name": "agent-gate",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "description": "A fail-closed approval gateway (sidecar) for autonomous CLI agents. Zero third-party dependencies.",
+  "license": "MIT",
   "engines": {
-    "node": ">=22.18"
+    "node": ">=24.0.0"
   },
   "bin": {
     "agent-gate": "./src/cli.ts"
