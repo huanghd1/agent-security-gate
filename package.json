@@ -1,0 +1,19 @@
+{
+  "name": "agent-gate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A fail-closed approval gateway (sidecar) for autonomous CLI agents. Zero third-party dependencies.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "agent-gate": "./src/cli.ts"
+  },
+  "scripts": {
+    "gate": "node src/cli.ts",
+    "eval": "node tests/eval/run.ts",
+    "e2e": "node tests/e2e/resume.ts",
+    "test": "node tests/eval/run.ts && node tests/e2e/resume.ts && node tests/e2e/webcard.ts"
+  }
+}

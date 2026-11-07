@@ -1,0 +1,7 @@
+.agent-gate/
+.demo/
+.e2e/
+.scratch/
+*.db
+*.db-wal
+*.db-shm
